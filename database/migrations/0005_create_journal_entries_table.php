@@ -19,7 +19,9 @@ return new class extends Migration {
 
             $table->index(['user_id', 'entry_date']);
             $table->index(['user_id', 'mood']);
-            $table->fullText(['title', 'content']);
+            $table->text('content');
+
+            
         });
     }
 
